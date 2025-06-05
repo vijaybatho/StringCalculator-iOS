@@ -20,4 +20,9 @@ final class StringCalculatorTests: XCTestCase {
     func testEmptyStringReturnsZero() {
         XCTAssertEqual(calculator.add(""), 0)
     }
+    
+    func testSingleNumberReturnsSameNumber() {
+        XCTAssertEqual(calculator.add("5"), 5)
+    }
+
 }

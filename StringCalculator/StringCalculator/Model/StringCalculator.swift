@@ -5,9 +5,10 @@
 //  Created by Vijay Batho on 05/06/25.
 //
 
-//MARK: StringCalculator
+//MARK: String Calculator
 class StringCalculator {
     func add(_ numbers: String) -> Int {
-        return numbers.isEmpty ? 0 : Int(numbers) ?? 0
-    }
+        if numbers.isEmpty { return 0 }
+        let numberArray = numbers.components(separatedBy: ",")
+        return numberArray.compactMap { Int($0) }.reduce(0, +)    }
 }
