@@ -5,13 +5,19 @@
 //  Created by Vijay Batho on 05/06/25.
 //
 
-import Testing
+import XCTest
 @testable import StringCalculator
 
-struct StringCalculatorTests {
+final class StringCalculatorTests: XCTestCase {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    var calculator: StringCalculator!
+
+    override func setUp() {
+        super.setUp()
+        calculator = StringCalculator()
     }
 
+    func testEmptyStringReturnsZero() {
+        XCTAssertEqual(calculator.add(""), 0)
+    }
 }
