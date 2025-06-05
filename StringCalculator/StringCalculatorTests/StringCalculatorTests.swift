@@ -24,5 +24,14 @@ final class StringCalculatorTests: XCTestCase {
     func testSingleNumberReturnsSameNumber() {
         XCTAssertEqual(calculator.add("5"), 5)
     }
+    
+    func testMultipleNumbersSeparatedByCommaOrNewLine() {
+        XCTAssertEqual(calculator.add("1,2\n3"), 6)
+    }
+
+    func testCustomDelimiter() {
+        XCTAssertEqual(calculator.add("//;\n1;2"), 3)
+    }
+
 
 }
