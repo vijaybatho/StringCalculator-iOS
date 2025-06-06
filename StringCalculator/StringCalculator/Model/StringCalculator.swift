@@ -9,12 +9,12 @@ import Foundation
 
 //MARK: String Calculator
 class StringCalculator {
-    func add(_ numbers: String) -> Int {
+    func add(_ numbers: String) throws -> Int {
         if numbers.isEmpty { return 0 }
-
+        
         var delimiterSet = CharacterSet(charactersIn: ",\n")
         var numbersToProcess = numbers
-
+        
         if numbers.hasPrefix("//") {
             let parts = numbers.components(separatedBy: "\n")
             if let delimiterLine = parts.first {
@@ -23,16 +23,21 @@ class StringCalculator {
                 numbersToProcess = parts.dropFirst().joined(separator: "\n")
             }
         }
-
+        
         let numberArray = numbersToProcess.components(separatedBy: delimiterSet)
-        let negatives = numberArray.compactMap { Int($0) }.filter { $0 < 0 }
-
+        let trimmedNumberArray = numberArray.map { $0.trimmingCharacters(in: .whitespaces) }
+        let negatives = trimmedNumberArray.compactMap { Int($0) }.filter { $0 < 0 }
+        print("Raw split array: \(numberArray)")
+        print("Trimmed array: \(trimmedNumberArray)")
         if !negatives.isEmpty {
-            let negativesStr = negatives.map { String($0) }.joined(separator: ",")
-            fatalError("negative numbers not allowed \(negativesStr)")
+            throw StringCalculatorError.negativeNumbersNotAllowed(negatives)
         }
-
+        
         return numberArray.compactMap { Int($0) }.reduce(0, +)
     }
+    
+}
 
+enum StringCalculatorError: Error {
+    case negativeNumbersNotAllowed([Int])
 }
