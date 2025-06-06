@@ -1,6 +1,6 @@
 # StringCalculator-iOS App
 
-This app is a iOS Developer assignment. It uses **Swift**, **TDD**, **UIKit**, and **MVVM** architecture.
+This app is an iOS Developer assignment. It uses **Swift**, **TDD**, **UIKit**, and **MVVM** architecture.
 
 ## Features
 
