@@ -18,20 +18,19 @@ final class StringCalculatorTests: XCTestCase {
     }
 
     func testEmptyStringReturnsZero() {
-        XCTAssertEqual(calculator.add(""), 0)
+        XCTAssertEqual(try calculator.add(""), 0)
     }
     
     func testSingleNumberReturnsSameNumber() {
-        XCTAssertEqual(calculator.add("5"), 5)
+        XCTAssertEqual(try calculator.add("5"), 5)
     }
     
     func testMultipleNumbersSeparatedByCommaOrNewLine() {
-        XCTAssertEqual(calculator.add("1,2\n3"), 6)
+        XCTAssertEqual(try calculator.add("1,2\n3"), 6)
     }
 
     func testCustomDelimiter() {
-        XCTAssertEqual(calculator.add("//;\n1;2"), 3)
+        XCTAssertEqual(try calculator.add("//;\n1;2"), 3)
     }
-
 
 }

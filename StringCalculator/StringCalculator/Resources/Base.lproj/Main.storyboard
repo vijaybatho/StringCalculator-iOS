@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zzF-dc-tjF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-SS-FaC">
-                                <rect key="frame" x="30" y="197.33333333333334" width="333" height="286.66666666666663"/>
+                                <rect key="frame" x="30" y="282.66666666666663" width="333" height="286.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHO-sF-YjC">
                                         <rect key="frame" x="20" y="0.0" width="293" height="125"/>
@@ -31,7 +32,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eim-zs-leq">
-                                                        <rect key="frame" x="0.0" y="48.999999999999972" width="263" height="46"/>
+                                                        <rect key="frame" x="0.0" y="49" width="263" height="46"/>
                                                         <color key="tintColor" red="0.2901961207" green="0.40000003579999999" blue="0.87450981139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Calculate">
                                                             <fontDescription key="titleFontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="26"/>
@@ -52,7 +53,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-I3-b2k">
-                                        <rect key="frame" x="141.66666666666666" y="139.99999999999997" width="50" height="1"/>
+                                        <rect key="frame" x="141.66666666666666" y="140" width="50" height="1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="KVy-bE-HyN"/>
                                         </constraints>
@@ -61,13 +62,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vm-3e-nST">
-                                        <rect key="frame" x="117.66666666666666" y="155.99999999999997" width="98" height="39.333333333333343"/>
+                                        <rect key="frame" x="117.66666666666666" y="156" width="98" height="39.333333333333343"/>
                                         <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="32"/>
                                         <color key="textColor" red="0.21568627450980393" green="0.16862745098039217" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCG-oK-Srz">
-                                        <rect key="frame" x="149.33333333333334" y="210.33333333333334" width="34.666666666666657" height="76.333333333333343"/>
+                                        <rect key="frame" x="149.33333333333334" y="210.33333333333331" width="34.666666666666657" height="76.333333333333314"/>
                                         <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="62"/>
                                         <color key="textColor" red="0.21568627450980393" green="0.16862745098039217" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -84,7 +85,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9sC-SS-FaC" secondAttribute="trailing" constant="30" id="1XS-75-bG6"/>
                             <constraint firstItem="9sC-SS-FaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="35S-IK-sLe"/>
-                            <constraint firstItem="9sC-SS-FaC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="5KF-zd-kbt"/>
+                            <constraint firstItem="9sC-SS-FaC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5KF-zd-kbt"/>
                             <constraint firstItem="9sC-SS-FaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ave-gj-miB"/>
                         </constraints>
                     </view>

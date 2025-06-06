@@ -20,12 +20,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator_iconbg" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-2g-AQV">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator_iconbg" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-2g-AQV">
                                 <rect key="frame" x="126.66666666666669" y="270.66666666666669" width="140" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgB-tL-adA">
-                                <rect key="frame" x="40" y="415.66666666666669" width="313" height="98.333333333333314"/>
+                                <rect key="frame" x="40" y="377" width="313" height="98.333333333333314"/>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                             <constraint firstItem="zAW-2g-AQV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="cHo-rd-LTM"/>
                             <constraint firstItem="mgB-tL-adA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="giF-Bh-ide"/>
                             <constraint firstItem="zAW-2g-AQV" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.356234" id="iSh-Ru-T8f"/>
-                            <constraint firstItem="mgB-tL-adA" firstAttribute="top" secondItem="zAW-2g-AQV" secondAttribute="bottom" constant="5" id="onA-f5-bBa"/>
+                            <constraint firstItem="mgB-tL-adA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vMM-xr-DYO"/>
                         </constraints>
                     </view>
                 </viewController>
